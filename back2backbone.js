@@ -96,12 +96,19 @@ b2b.Model = Backbone.Model.extend({
 b2b.createRoutes = function(models) {
 	
 	for(var i in models) {
-		
-		var temp = models[i].prototype;//new models[i]();
-		//console.log(i, ".urlRoot", temp.urlRoot);
-		//console.log(i,".url", temp.url());
+		//get a reference to the desired model prototype.
+		var temp = models[i].prototype;
+		//cache 'this'
 		var self = this;
 		
+		//TODO: create mongoose schema's from defaults
+		//...
+		/** create routes **/
+		//TODO: these are all 'first class' routes.
+		// we should also examine temp.defaults for functions that tell us
+		// what our relationships should be...
+		//...
+
 		//create the get collection route
 		this.app.get(temp.urlRoot, function(req, res) {
 			console.log("getting:", req.url);
