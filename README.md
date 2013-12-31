@@ -1,4 +1,3 @@
-back2backbone
-=============
+Node module to allow backbone models to be synced and manipulated across client and server.
 
-Node rest server geared toward backbone that also uses backbone models on the server to enforce validation and act on model changes.
+examples:
