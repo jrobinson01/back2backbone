@@ -3,5 +3,6 @@ Node module to allow backbone models to be synced and manipulated across client 
 examples: see "test/B2bApp.js"
 
 TODO:
-1)integrate with mongoose/mongo.
-2) handle relational models/collections.
+1) leave save triggering to model subclasses.
+2)integrate with mongoose/mongo. (60%?)
+3) handle relational models/collections.
